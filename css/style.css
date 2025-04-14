@@ -53,7 +53,7 @@ body{
     float: left;
     height: 30px;
     width: 60px;
-    background-color: rgb(190, 190, 68);
+    /* background-color: rgb(190, 190, 68); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +70,6 @@ body{
     align-items: center;
     color: rgb(248, 252, 250);
     font-weight: bold;
-    animation: title 1.5s alternate infinite;
     
 }
 .navbar ul li a:hover{
@@ -79,7 +78,7 @@ body{
     border-radius: 5px;
     border-right: 1px solid rgb(179, 21, 21);
     border-bottom: 1px solid rgb(179, 21, 21);
-    box-shadow: 1px 2px 3px 2px black;
+    box-shadow: 1px 2px 3px 2px rgb(190, 188, 188);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,12 +138,43 @@ body{
     width: 100%;
     font-family: "Special Gothic Condensed One", sans-serif;
 }
-
-
+/* start products */
+.product{
+    height: 75vh;
+    width: 100%;
+    background: linear-gradient(to left,black,pink);
+}
+.product-title{
+    text-transform: uppercase;
+    background: linear-gradient(to left,black,pink);
+    height: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product .left{
+    height: 75vh;
+    width: 100%;
+}
+.product .right{
+    height: 75vh;
+    width: 100%;
+    font-family: "Special Gothic Condensed One", sans-serif;
+}
+i{
+    font-size: 100px;
+    text-align: center;
+    animation: title 1.5s alternate infinite;
+    color: rgb(204, 60, 60);
+    border-radius: 5px;
+}
 /* start footer */
 .footer{
     height: 50vh;
     width: 100wh;
     background-color: black;
     color: whitesmoke;
+    border: 1px dotted red;
 }
