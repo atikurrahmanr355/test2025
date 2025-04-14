@@ -1,30 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Special+Gothic+Condensed+One&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    font-family: "Merriweather", serif;
+}
 .head{
-    background-color: rgba(91, 160, 21, 0.932);
+    background: linear-gradient(to left,black,pink);
     height: 50px;
-    width: 100wh;
+    /* width: 100wh;
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 .title{
+    height: 30px;
     float: left;
     box-shadow: 1px 2px 3px 2px black;
+    border: none;
+    outline: none;
     cursor: pointer;
     text-transform: uppercase;
     padding: 5px;
-    
+    font-family: "Bungee Spice", sans-serif;
+    animation: title 1.5s alternate infinite;
+}
+.title-right{
+    color: red;
 }
 .title:hover{
-    transform: rotate(360deg);
-    transition: .5s;
+    animation: title 1.5s alternate infinite;
 }
+@keyframes title {
+    from{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(-10deg);
+    }
+}
+
 .navbar ul{
     list-style: none;
 }
@@ -49,6 +70,7 @@
     align-items: center;
     color: rgb(248, 252, 250);
     font-weight: bold;
+    animation: title 1.5s alternate infinite;
     
 }
 .navbar ul li a:hover{
@@ -61,6 +83,68 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotate(360deg);
-    transition: .5s;
+}
+.home{
+    height: 75vh;
+    width: 100%;
+    background-image: url('img/homebg.jpg');
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home-layer{
+    height: 75vh;
+    width: 100%;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(221, 93, 115, 0.6));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-title{
+    text-transform: uppercase;
+    font-size: 70px;
+    color: whitesmoke;
+}
+.home-title .name{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(215, 227, 250);
+    text-transform: capitalize;
+}
+/* start about section */
+.about{
+    height: 75vh;
+    width: 100%;
+    background: linear-gradient(to left,black,pink);
+}
+.about-title{
+    text-transform: uppercase;
+    background: linear-gradient(to left,black,pink);
+    height: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .left{
+    height: 75vh;
+    width: 100%;
+}
+.about .right{
+    height: 75vh;
+    width: 100%;
+    font-family: "Special Gothic Condensed One", sans-serif;
+}
+
+
+/* start footer */
+.footer{
+    height: 50vh;
+    width: 100wh;
+    background-color: black;
+    color: whitesmoke;
 }
