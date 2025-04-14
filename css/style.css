@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.head{
+    background-color: rgba(91, 160, 21, 0.932);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    float: left;
+}
