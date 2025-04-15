@@ -11,7 +11,7 @@
 </head>
 <body>
         <section id="home">
-            <header class="head sticky-top">
+            <header class="head fixed-top" >
                 <div class="container-fluid d-flex justify-content-between align-items-center">
                     <div class="title">
                         <h4>hunting <span class="title-right">.com</span></h4> 
@@ -26,9 +26,9 @@
                     </nav>
                 </div>
             </header>
-            <div class="home"  style="background-image: url('img/homebg.jpg');">       
+            <div class="home-layer"  style="background-image: url('img/homebg.jpg');">       
             </div>
-            <div class="home-layer">
+            <div class="inner-layer">
                 <div class="home-title">
                     hunting.com
                     <div class="name">head : Atikur Rahman</div>
@@ -39,16 +39,19 @@
     
         <!-- start about section -->
         <section id="about">
-            <div class="about-title">
-                about us
+            <div class="about-title text-light py-5">
+                <div>
+                    about us
+                <div class=" line border mt-1" style="height: 1px; width:100%;"></div>
+                </div>
             </div>
             <div class="about"> 
                 <div class="container-fluid">
                 
                
                     <div class="row">
-                        <aside class="left col-md-6">
-                            <img src="img/atik.jpg" height="450px" alt="image of Atik">
+                        <aside class="left col-md-6 d-flex justify-content-center align-items-center">
+                            <img src="img/atik.jpg" height="450px" class="rounded" alt="image of Atik">
                         </aside>
                         <aside class="right col-md-6 d-flex justify-content-center align-items-center text-light">
                             <div>
@@ -65,6 +68,8 @@
                                 <p>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo vero architecto ducimus quos, dolores voluptatibus non minus placeat itaque laboriosam iusto, veritatis eius, nihil ipsum recusandae officiis voluptate iure maiores!
                                 </p>
+                                <div class=" line border mt-5" style="height: 1px; width:100%;"></div>
+                                <a href="Atik_cv .pdf" download class="btn btn-warning mt-3">Download CV</a>
                             </div>
                         </aside> 
                     </div>  
@@ -73,16 +78,20 @@
             
         </section> 
         <!-- start product -->
-        <section id="product">
-            <div class="product-title">
-                Our Products
+        <section id="services">
+            <div class="services-title text-light py-5">
+                <div>
+                    Our Services
+                    <div class=" line border mt-1" style="height: 1px; width:100%;"></div>
+                </div>
             </div>
-            <div class="product"> 
+            <div class="services"> 
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-3">
                             <div class="card py-3">
                                 <i class="fa-brands fa-python"></i>
+                                <div class="card-text h3 mt-2">Killing Mission</div>
                                 <div class="card-body">
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
@@ -91,6 +100,7 @@
                         <div class="col-md-3">
                             <div class="card py-3">
                                 <i class="fa-brands fa-js"></i>
+                                <div class="card-text h3 mt-2">Threating Mission</div>
                                 <div class="card-body">
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
@@ -99,6 +109,7 @@
                         <div class="col-md-3">
                             <div class="card py-3">
                                 <i class="fa-solid fa-file-code"></i>
+                                <div class="card-text h3 mt-2">Settlement Mission</div>
                                 <div class="card-body">
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
@@ -107,27 +118,42 @@
                         <div class="col-md-3">
                             <div class="card py-3">
                                 <i class="fa-brands fa-css"></i>
+                                <div class="card-text h3 mt-2">Kidnapping Mission</div>
                                 <div class="card-body">
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                               </div>
                         </div>
                     </div>  
-                </div>   
+                </div> 
+                <div class="d-flex justify-content-center align-items-center py-5 ">
+                    <a href="#" class="btn btn-warning font-weight-bold">Contact Us</a> 
+                    <a href="#" class="btn btn-success ml-3 text-light font-weight-bold">Hire Us</a> 
+                </div>
             </div>
             
         </section> 
     <footer class="footer">
         <div class="container-fluid ">
             <div class="row">
-                <div class="col-4 border-right">
+                <div class="col-4 border-right py-3">
                     <h1 class="text-info" style="font-family:'Poetsen One', sans-serif;">Hunting.<span class="text-danger">com</span></h1>
                     <h3 class="name text-warning text-capitalize">Atikur <span class="text-danger">Rahman</span></h3>
+                    <h2>Location:</h2>
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29251.5573743324!2d90.5618704670366!3d23.588380271858398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b2b39937cc31%3A0x4c42badea9d49fcd!2sHosseindi!5e0!3m2!1sen!2sbd!4v1744733535025!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="col-4">
-
+                <div class="col-4 footer-links py-3 border-right">
+                    <h4 class="text-warning">Links</h4>
+                    <ul>
+                        <li>--- <a href="#">Home</a></li>
+                        <li>--- <a href="#">About</a></li>
+                        <li>--- <a href="#">Contact</a></li>
+                        <li>--- <a href="#">Blogs</a></li>
+                    </ul>
                 </div>
-                <div class="col-4">
+                <div class="col-4 py-3">
 
                 </div>
             </div>
