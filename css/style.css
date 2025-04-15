@@ -34,7 +34,7 @@ body{
     text-transform: uppercase;
     padding: 5px;
     font-family: "Bungee Spice", sans-serif;
-    animation: title 1.5s alternate infinite;
+    animation: title 2s alternate infinite;
 }
 .title-right{
     color: red;
@@ -44,10 +44,10 @@ body{
 }
 @keyframes title {
     from{
-        transform: rotate(10deg);
+        transform: rotate(8deg);
     }
     to{
-        transform: rotate(-10deg);
+        transform: rotate(-8deg);
     }
 }
 
@@ -120,7 +120,7 @@ body{
 }
 /* start about section */
 .about{
-    height: 75vh;
+    height: 100vh;
     width: 100%;
     background: linear-gradient(to left,black,pink);
 }
@@ -135,17 +135,17 @@ body{
     align-items: center;
 }
 .about .left{
-    height: 75vh;
+    height: 100vh;
     width: 100%;
 }
 .about .right{
-    height: 75vh;
+    height: 100vh;
     width: 100%;
     font-family: "Special Gothic Condensed One", sans-serif;
 }
 /* start products */
-.product{
-    height: 75vh;
+.services{
+    height: 100vh;
     width: 100%;
     background: linear-gradient(to left,black,pink);
 }
@@ -158,6 +158,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.services .card{
+    box-sizing: border-box;
+    box-shadow: 3px 3px 7px 2px black;
+    border-left: 4px dotted red;
+    cursor: pointer;
+}
+.services .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .7s;
 }
 .services .left{
     height: 75vh;
