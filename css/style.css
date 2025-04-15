@@ -6,12 +6,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     font-family: "Merriweather", serif;
 }
 .head{
     background: linear-gradient(to left,black,pink);
     height: 50px;
+    margin-top: 0px;
+    margin-bottom: 100px;
     /* width: 100wh;
     padding-left: 5px;
     padding-right: 5px;
@@ -83,8 +88,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.home{
-    height: 75vh;
+.home-layer{
+    height: 100vh;
     width: 100%;
     background-image: url('img/homebg.jpg');
     position: absolute;
@@ -93,8 +98,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-.home-layer{
-    height: 75vh;
+.inner-layer{
+    height: 100vh;
     width: 100%;
     background:linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(221, 93, 115, 0.6));
     position: relative;
@@ -144,7 +149,7 @@ body{
     width: 100%;
     background: linear-gradient(to left,black,pink);
 }
-.product-title{
+.services-title{
     text-transform: uppercase;
     background: linear-gradient(to left,black,pink);
     height: 60px;
@@ -154,11 +159,11 @@ body{
     justify-content: center;
     align-items: center;
 }
-.product .left{
+.services .left{
     height: 75vh;
     width: 100%;
 }
-.product .right{
+.services .right{
     height: 75vh;
     width: 100%;
     font-family: "Special Gothic Condensed One", sans-serif;
@@ -174,7 +179,18 @@ i{
 .footer{
     height: 50vh;
     width: 100wh;
-    background-color: black;
+    background: linear-gradient(to left,black,rgb(2, 3, 46));
     color: whitesmoke;
     border: 1px dotted red;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer .maps iframe{
+    height: 100px;
+    width: 200px;
 }
